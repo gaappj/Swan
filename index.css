@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(92.78deg, #262146, #281d36 21.7%, #2d1c26 42.53%, #38211c 63.89%, #3e220e 83.16%, #2f1909);
+    color: #fff; /* Couleur du texte */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Pour centrer verticalement */
+}
+
+.container {
+    width: 80%;
+    max-width: 500px; /* Limite de la largeur pour une meilleure lisibilité */
+    background-color: rgba(255, 255, 255, 0.8); /* Ajout de la transparence */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrer le titre */
+}
+
+h2 {
+    margin: 10%;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center; /* Centrer les sous-titres */
+}
+
+ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(92.78deg, #262146, #281d36 21.7%, #2d1c26 42.53%, #38211c 63.89%, #3e220e 83.16%, #2f1909);
+    color: #f1c086; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#edit-contact-form {
+    margin-top: 10px;
+}
+
+#edit-contact-form input[type="text"] {
+    margin-bottom: 10px;
+}
+
+#edit-contact-form button {
+    background-color: #28a745;
+}
+
+#edit-contact-form button:hover {
+    background-color: #218838;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#edit-contact-form {
+    animation: fadeIn 0.3s ease-in-out;
+}
